@@ -1,3 +1,9 @@
-header.mw-header {
-  
+#Header {
+  background: $header-background;
+  a {
+    color: $anchor-color;
+  } 
+  #SearchForm {
+    @include linear-gradient(#852201, #6a1b00);
+  }
 }
