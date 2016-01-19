@@ -1,13 +1,15 @@
 var mappings = [
     [/^\/$|^\/\?/,
-        "/pages/home.js"]
+        "/pages/home.js"],
+    [/shop/,
+        "/pages/category.js"]
 ];
 
 module.exports = function() {
     var status = env["status"], path = env["path"];
     if (status == "200") {
-        var match = false;
-        for (var i = 0; i < mappings.length; i++) {
+        var match = false, maplen = mappings.length;
+        for (var i = 0; i < maplen; ++i) {
             if (mappings[i][0].test(path)) {
                 match = true;
                 console.log("--> Importing " + mappings[i][1] + " in mappings.js");
