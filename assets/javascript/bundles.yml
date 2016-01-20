@@ -4,8 +4,8 @@
   :input_directories:
     - head
   :input_files:
-  - vendor/jquery.DOMNodeAppear.js
   - http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js
+  - vendor/jquery.DOMNodeAppear.js
   - host_map.js
   - http://downloads.moovweb.com/plutonium/0.1.95/passthrough_ajax.js
 - :output_file: body.js

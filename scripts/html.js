@@ -32,5 +32,5 @@ module.exports = function() {
         require("/perf.js")();
     });
 
-    fns.removeDesktopJs();
+    // fns.removeDesktopJs();
 };
